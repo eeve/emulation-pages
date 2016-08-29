@@ -1,0 +1,338 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+*, *:before, *:after{
+	box-sizing: border-box;
+}
+body{
+	font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+	color: #666;
+	background: #fff;
+}
+a {
+	color: #666;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #df0007;
+	text-decoration: underline;
+}
+
+i{
+	font-style: normal;
+}
+b{
+	font-weight: normal;
+}
+ul,li{
+	list-style: none;
+}
+.rb{
+	border-right: 1px solid #f4f4f4;
+}
+
+.w{
+	width: 990px;
+	margin: 0 auto;
+}
+
+.highlight{
+	color: #e4393c;
+}
+.hide{
+	display: none;
+}
+.mb20{
+	margin-bottom: 20px;
+}
+.mb15{
+	margin-bottom: 15px;
+}
+
+.nav-top{
+
+}
+
+.logo{
+	width: 300px;
+	position: relative;
+	margin: 10px 0 0;
+}
+.logo-image{
+	width: 170px;
+	height: 60px;
+	vertical-align: middle;
+}
+.brand-image{
+	position: absolute;
+	right: 0;
+	top: 10px;
+	width: 110px;
+	height: 40px;
+	background: url(./images/l-icon.png) no-repeat;
+}
+
+.content {
+	height: 475px;
+	background: red;
+	background-color: #ff8500;
+	margin-top: 10px;
+}
+
+.login-form{
+	width: 346px;
+	height: 361px;
+	background: #fff;
+	position: relative;
+	top: 40px;
+	float: right;
+}
+
+.login-form .tab-nav{
+	font-size: 0;
+	display: table;
+	width: 100%;
+	border-bottom: 1px solid #f4f4f4;
+}
+
+.login-form .tab-nav .tab-item{
+	display: table-cell;
+	width: 50%;
+	height: 54px;
+	font-size: 18px;
+	text-align: center;
+	vertical-align: middle;
+}
+.login-form .tab-nav .tab-item.active b{
+	font-weight: 700;
+	color: #e4393c;
+}
+
+.login-form .tab-item b{
+	display: inline-block;
+	width: 99%;
+}
+.login-form .tab-item b:hover{
+	color: #df0007;
+	cursor: pointer;
+	font-weight: 700;
+}
+
+.login-form .tab-content{
+	padding: 0 20px 20px;
+	height: 306px;
+}
+.login-form .qrcode-box{
+	padding-top: 40px;
+}
+.login-form .qrcode-box .qrcode-main{
+	text-align: center;
+	margin: 0 auto;
+	width: 173px;
+	height: 165px;
+	padding: 8px;
+	border: 1px solid #f4f4f4;
+}
+.login-form .tab-content .qrcode{
+	width: 147px;
+	height: 147px;
+}
+.login-form .qrcode-box .qrcode-helper{
+	margin: 43px auto 20px;
+	text-align: center;
+}
+.login-form .qrcode-helper > a{
+	color: #999;
+}
+
+.login-form .qrcode-helper > a:hover{
+	text-decoration: none;
+}
+.login-form .qrcode-helper .helper1,.login-form .qrcode-helper .helper2{
+	/*margin: 0 10px;*/
+	padding: 0 10px;
+}
+.login-form .qrcode-helper .helper-line{
+	border-left: 1px solid #ccc;
+	font-weight: normal;
+	width: 1px;
+}
+
+.login-form .form-box .msg-wrap{
+	min-height: 31px;
+	height: auto;
+	margin-bottom: 10px;
+	padding-top: 9px;
+}
+.login-form .msg-wrap .warn{
+	position: relative;
+	background: #fff6d2;
+	border: 1px solid #ffe57d;
+	padding: 3px 10px 3px 40px;
+}
+
+.login-form .msg-wrap .warn b{
+	position: absolute;
+	left: 10px;
+	display: block;
+	width: 16px;
+	height: 17px;
+	background: url(./images/pwd-icons-new.png) -104px -22px no-repeat;
+}
+.login-form .form-box .item{
+	position: relative;
+	/*width: 304px;*/
+}
+.login-form .form-box .item-bd{
+	border: 1px solid #bdbdbd;
+}
+.login-form .form-box .itext{
+	height: 38px;
+	line-height: 18px;
+	border: 0;
+	padding: 10px 0 10px 50px;
+	width: 100%;
+	outline: none;
+	font-size: 14px;
+	font-family: '\5b8b\4f53';
+}
+
+.login-form .form-box .item.item-focus {
+	border: 1px solid #3aa2e4;
+}
+
+.login-form .form-box .item.item-focus .label-username {
+	background-position: 0 -48px;
+	border-color: #3aa2e4
+}
+
+.login-form .form-box .item.item-focus .label-password {
+	background-position: -48px -48px;
+	border-color: #3aa2e4
+}
+
+.login-form .form-box .login-label{
+	position: absolute;
+	width: 38px;
+	height: 38px;
+	border-right: 1px solid #bdbdbd;
+	background: url(./images/pwd-icons-new.png) no-repeat;
+}
+
+.login-form .form-box .label-username{
+	background-position: 0 0;
+}
+.login-form .form-box .label-password{
+	background-position: -48px 0;
+}
+
+.login-form .form-box .forget-password{
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 0;
+}
+
+.login-form .form-box .login-btn{
+	height: 35px;
+	line-height: 33px;
+	border: 1px solid #cb2a2d;
+	width: 100%;
+}
+.login-form .login-btn > a{
+	border: 1px solid #e85356;
+	display: block;
+	background: #e4393c;
+	color: #fff;
+	font-size: 20px;
+	font-family: 'Microsoft YaHei';
+	text-align: center;
+	display: block;
+	height: 100%;
+}
+.login-form .login-btn > a:hover{
+	text-decoration: none;
+}
+
+.login-form .other-login-way{
+	height: 53px;
+	position: relative;
+	top: 20px;
+	border-top: 1px solid #f4f4f4;
+	background-color: #fcfcfc;
+	margin-left: -20px;
+	margin-right: -20px;
+	padding: 0 20px;
+}
+.login-form .other-login-way ul{
+	width: 100%;
+	height: 100%;
+}
+.login-form .other-login-way li {
+	float: left;
+	display: table;
+	height: 100%;
+}
+.login-form .other-login-way a, .login-form .other-login-way .line{
+	display: table-cell;
+	vertical-align: middle;
+}
+.login-form .other-login-way .line{
+	color: #ccc;
+	padding: 0 10px;
+}
+.login-form .other-login-way .register-link{
+	position: absolute;
+	right: 20px;
+	top: 17px;
+}
+.login-form .other-login-way .register-link b{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+	background: url(./images/pwd-icons-new.png) -104px -75px no-repeat;
+	vertical-align: sub;
+	margin-right: 5px;
+}
+
+.login-banner{
+	background: url(./images/57a15370Nf057fce1.jpg) 0px 0px no-repeat;
+	height: 475px;
+	background-color: #ff8500;
+}
+
+.nav-footer{
+	margin-top: 20px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+.nav-footer .function{
+	text-align: right;
+}
+
+.nav-footer .report{
+	position: relative;
+	top: -10px;
+	color: #999;
+}
+.nav-footer .report i {
+	display: inline-block;
+	width: 18px;
+	height: 14px;
+	margin: 0 5px;
+	background: url(./images/q-icon.png) no-repeat;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+.nav-footer .links > a{
+	margin: 0 10px;
+}
+
+.nav-footer .copyright{
+	margin: 10px 0;
+}
+
